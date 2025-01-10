@@ -6,8 +6,8 @@ import nltk
 nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
-model=pickle.load(open("model/model.pkl",'rb'))
-vectorizer=pickle.load(open("model/vectorizer.pkl",'rb'))
+model=pickle.load(open("model.pkl",'rb'))
+vectorizer=pickle.load(open("vectorizer.pkl",'rb'))
 
 st.text("sentiment analysis")
 state = st.button("predict")
